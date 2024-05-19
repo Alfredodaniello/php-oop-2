@@ -6,6 +6,7 @@ require_once __DIR__ . "/Games.php";
 require_once __DIR__ . "/Kennel.php";
 require_once __DIR__ . "/Category.php";
 
+
 $dog = new Category("Cani");
 $cat = new Category("Gatti");
 
@@ -13,12 +14,16 @@ $product = new Product("Gioco", 10, $cat);
 
 
 $cibo = new Food("Crocchette", 5, $dog);
+$cibo->setCity("Firenze");
 
 
 $ball = new Game("Palla", 5, $cat);
+$ball->setCity("Milano");
 
 
 $kennel = new Kennel("Monge", 100, $dog);
+$kennel->setCity("Roma");
+
 
 $products = [
   $product,

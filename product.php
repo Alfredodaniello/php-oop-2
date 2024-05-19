@@ -7,7 +7,7 @@ class Product {
     public $image;
     public $category;
 
-    public function __construct($_name, $_price, $_category)
+    public function __construct($_name, $_price, Category $_category)
     {
         $this->name = $_name;
         $this->price = $_price;
